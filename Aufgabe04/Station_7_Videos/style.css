@@ -1,0 +1,74 @@
+body {
+    background-image: url("images/bg.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.Karte {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-image: url("images/container.png");
+}
+
+html {
+    height: 100%;
+}
+
+.Text {
+    position: absolute;
+    bottom: 0px;
+    padding: 50px;
+    padding-bottom: 90px;
+    ;
+    color: white;
+    padding-right: 217px;
+}
+
+.Stechpalme {
+    position: absolute;
+    left: -70px;
+    top: -70px;
+}
+
+h1 {
+    font-size: 35px;
+    margin-top: 5px;
+}
+
+p {
+    font-size: 15px;
+    margin-top: 50px;
+}
+
+.videobaum {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+.geschenke {
+    position: absolute;
+    right: -10px;
+    bottom: -30px;
+}
+
+.stern {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+.stern2 {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+}
+
+.stern3 {
+    position: absolute;
+    top: 70px;
+    left: 370px;
+}
