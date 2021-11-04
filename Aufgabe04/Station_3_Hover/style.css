@@ -1,0 +1,58 @@
+body {
+    background-image: url("images/bg.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.Karte {
+    position: relative;
+    width:600px;
+    height:400px;
+    background-image: url("images/wrapperbg.png");
+    
+}
+
+html {
+    height:100%;
+}
+.Text {
+
+    color: white;
+    padding: 50px;
+}
+h1 {
+    font-size: 35px;
+    margin-top: 5px;
+}
+
+.stern {
+
+    width:65px;
+    height:65px;
+    background-image: url("images/stern.png");
+    position:absolute;
+}
+.stern:hover {
+    background-image: url("images/stern_hover.png");
+}
+
+.stern1 {
+    left:53px;
+}
+
+
+.stern2 {
+    left:170px;
+    top:140px;
+}
+
+.stern3 {
+    right:280px;
+    bottom:70px;
+}
+
+.stern4 {
+    right:110px;
+    bottom:120x;
+}

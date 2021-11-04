@@ -1,0 +1,29 @@
+body {
+    background-image: url("images/bg.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.Karte {
+    position: relative;
+    width:600px;
+    height:400px;
+    background-image: url("images/wrapperbg.png");
+    
+}
+
+html {
+    height:100%;
+}
+
+.banderole {
+    position:absolute;
+    right: 0px;
+    bottom: 0px;
+
+}
+.video {
+    margin: 50px;
+    margin-top: 60px;
+}

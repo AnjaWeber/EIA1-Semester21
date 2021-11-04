@@ -1,0 +1,51 @@
+body {
+    background-image: url("images/bg.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.Karte {
+    position: relative;
+    width:600px;
+    height:400px;
+    background-image: url("images/wrapperbg.png");
+    
+}
+
+html {
+    height:100%;
+}
+.Text {
+    padding:50px;
+    color: white;
+}
+
+
+h1 {
+    font-size: 35px;
+    margin-top: 5px;
+    color: white;
+    margin-bottom: 5px;
+}
+p{
+    font-size: 20px;
+    margin-top: 1px;
+    color: white;
+}
+
+
+label {
+    color: white;
+}
+.Eingabefeld {
+    margin-bottom: 15px;
+
+}
+.kleinerText {
+    margin-bottom: 3px;
+    font-size: 16px;
+}
+.submit {
+    margin-top: 15px;
+}

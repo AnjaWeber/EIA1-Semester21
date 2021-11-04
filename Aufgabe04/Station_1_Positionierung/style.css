@@ -1,0 +1,43 @@
+body {
+    background-image: url("images/bg.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.Karte {
+    position: relative;
+    width:600px;
+    height:400px;
+    background-image: url("images/wrapperbg.png");
+    
+}
+
+html {
+    height:100%;
+}
+.Text {
+    padding:50px;
+    color: white;
+}
+.Pinguin {
+    width: 144px;
+    height: 193px;
+    position: absolute;
+    right:-50px;
+    bottom:-20px;
+    
+}
+.Stechpalme {
+    position: absolute;
+    left:-70px;
+    top:-70px; 
+}
+h1 {
+    font-size: 35px;
+    margin-top: 5px;
+}
+p{
+    font-size: 20px;
+    margin-top: 1px;
+}
