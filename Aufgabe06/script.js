@@ -31,99 +31,38 @@ var southAmericaKilogrammVeraenderung = southAmerica2018 - southAmerica2008;
 var europeKilogrammVeraenderung = europe2018 - europe2008;
 var northAmericaKilogrammVeraenderung = northAmerica2018 - northAmerica2008;
 function africa() {
-    console.log('Die Emission von Afrika ist: ' + africa2018 + ' kg CO2');
-    console.log('Relativ zur Gesamtemission der Welt verursacht Afrika damit ' + africaAnteilWelt2018.toFixed(2) + '%');
-    console.log('Für Afrika hat sich 2018 im Vergleich zu 2008 die Emission um ' + africaProzentualeVeraenderung.toFixed(2) + '% verändert');
-    console.log('2018 im Vergleich zu 2008 sind das ' + africaKilogrammVeraenderung.toFixed(2) + ' kg CO2');
-    document.querySelector('#absolute').innerHTML = africa2018 + "";
-    document.querySelector('#relative').innerHTML = africaAnteilWelt2018.toFixed(2) + "%";
-    document.querySelector('#growthpercentage').innerHTML = africaProzentualeVeraenderung.toFixed(2) + "%";
-    document.querySelector('#growthabsolute').innerHTML = africaKilogrammVeraenderung.toFixed(2) + "";
-    document.querySelector('#title').innerHTML = "Carbon Dioxide Emissions in Africa";
-    document.querySelector('#absoluteSubtitle').innerHTML = "Emission absolute of Africa in 2018";
-    document.querySelector('.chart').setAttribute('style', 'height: ' + africaAnteilWelt2018 + "%");
+    verbrauchanzeigen('Europe', africa2018, africaAnteilWelt2018, africaProzentualeVeraenderung, africaKilogrammVeraenderung);
 }
-window.addEventListener('load', function () {
-    document.querySelector(".africa").addEventListener('click', africa);
-});
 function asia() {
-    console.log('Die Emission von Asien ist: ' + asia2018 + ' kg CO2');
-    console.log('Relativ zur Gesamtemission der Welt verursacht Asien damit ' + asiaAnteilWelt2018.toFixed(3) + '%');
-    console.log('Für Asien hat sich 2018 im Vergleich zu 2008 die Emission um ' + asiaProzentualeVeraenderung.toFixed(2) + '% verändert');
-    console.log('2018 im Vergleich zu 2008 sind das ' + asiaKilogrammVeraenderung.toFixed(2) + ' kg CO2');
-    document.querySelector('#absolute').innerHTML = asia2018 + "";
-    document.querySelector('#relative').innerHTML = asiaAnteilWelt2018.toFixed(2) + "%";
-    document.querySelector('#growthpercentage').innerHTML = asiaProzentualeVeraenderung.toFixed(2) + "%";
-    document.querySelector('#growthabsolute').innerHTML = asiaKilogrammVeraenderung.toFixed(2) + "";
-    document.querySelector('#title').innerHTML = "Carbon Dioxide Emissions in Asia";
-    document.querySelector('#absoluteSubtitle').innerHTML = "Emission absolute of Asia in 2018";
-    document.querySelector('.chart').setAttribute('style', 'height: ' + asiaAnteilWelt2018 + "%");
+    verbrauchanzeigen('Asia', asia2018, asiaAnteilWelt2018, asiaProzentualeVeraenderung, asiaKilogrammVeraenderung);
 }
-window.addEventListener('load', function () {
-    document.querySelector(".asia").addEventListener('click', asia);
-});
 function australia() {
-    console.log('Die Emission von Australien ist: ' + australia2018 + ' kg CO2');
-    console.log('Relativ zur Gesamtemission der Welt verursacht Australien damit ' + australiaAnteilWelt2018.toFixed(2) + '%');
-    console.log('Für Australien hat sich 2018 im Vergleich zu 2008 die Emission um ' + australiaProzentualeVeraenderung.toFixed(2) + '% verändert');
-    console.log('2018 im Vergleich zu 2008 sind das ' + australiaKilogrammVeraenderung.toFixed(2) + ' kg CO2');
-    document.querySelector('#absolute').innerHTML = australia2018 + "";
-    document.querySelector('#relative').innerHTML = australiaAnteilWelt2018.toFixed(2) + "%";
-    document.querySelector('#growthpercentage').innerHTML = australiaProzentualeVeraenderung.toFixed(2) + "%";
-    document.querySelector('#growthabsolute').innerHTML = australiaKilogrammVeraenderung.toFixed(2) + "";
-    document.querySelector('#title').innerHTML = "Carbon Dioxide Emissions in Australia";
-    document.querySelector('#absoluteSubtitle').innerHTML = "Emission absolute of Australia in 2018";
-    document.querySelector('.chart').setAttribute('style', 'height: ' + australiaAnteilWelt2018 + "%");
+    verbrauchanzeigen('Australia', australia2018, australiaAnteilWelt2018, australiaProzentualeVeraenderung, australiaKilogrammVeraenderung);
 }
-window.addEventListener('load', function () {
-    document.querySelector(".australia").addEventListener('click', australia);
-});
 function southAmerica() {
-    console.log('Die Emission von Südamerika ist: ' + southAmerica2018 + ' kg CO2');
-    console.log('Relativ zur Gesamtemission der Welt verursacht Südamerika damit ' + southAmericaAnteilWelt2018.toFixed(2) + '%');
-    console.log('Für Südamerika hat sich 2018 im Vergleich zu 2008 die Emission um ' + southAmericaProzentualeVeraenderung.toFixed(2) + '% verändert');
-    console.log('2018 im Vergleich zu 2008 sind das ' + southAmericaKilogrammVeraenderung.toFixed(2) + ' kg CO2');
-    document.querySelector('#absolute').innerHTML = southAmerica2018 + "";
-    document.querySelector('#relative').innerHTML = southAmericaAnteilWelt2018.toFixed(2) + "%";
-    document.querySelector('#growthpercentage').innerHTML = southAmericaProzentualeVeraenderung.toFixed(2) + "%";
-    document.querySelector('#growthabsolute').innerHTML = southAmericaKilogrammVeraenderung.toFixed(2) + "";
-    document.querySelector('#title').innerHTML = "Carbon Dioxide Emissions in South America";
-    document.querySelector('#absoluteSubtitle').innerHTML = "Emission absolute of South America in 2018";
-    document.querySelector('.chart').setAttribute('style', 'height: ' + southAmericaAnteilWelt2018 + "%");
+    verbrauchanzeigen('South America', southAmerica2018, southAmericaAnteilWelt2018, southAmericaProzentualeVeraenderung, southAmericaKilogrammVeraenderung);
 }
-window.addEventListener('load', function () {
-    document.querySelector(".southamerica").addEventListener('click', southAmerica);
-});
 function europe() {
-    console.log('Die Emission von Europa ist: ' + europe2018 + ' kg CO2');
-    console.log('Relativ zur Gesamtemission der Welt verursacht Europa damit ' + europeAnteilWelt2018.toFixed(2) + '%');
-    console.log('Für Europa hat sich 2018 im Vergleich zu 2008 die Emission um ' + europeProzentualeVeraenderung.toFixed(2) + '% verändert');
-    console.log('2018 im Vergleich zu 2008 sind das ' + europeKilogrammVeraenderung.toFixed(2) + ' kg CO2');
-    document.querySelector('#absolute').innerHTML = europe2018 + "";
-    document.querySelector('#relative').innerHTML = europeAnteilWelt2018.toFixed(2) + "%";
-    document.querySelector('#growthpercentage').innerHTML = europeProzentualeVeraenderung.toFixed(2) + "%";
-    document.querySelector('#growthabsolute').innerHTML = europeKilogrammVeraenderung.toFixed(2) + "";
-    document.querySelector('#title').innerHTML = "Carbon Dioxide Emissions in Europe";
-    document.querySelector('#absoluteSubtitle').innerHTML = "Emission absolute of Europe in 2018";
-    document.querySelector('.chart').setAttribute('style', 'height: ' + europeAnteilWelt2018 + "%");
+    verbrauchanzeigen('Europe', europe2018, europeAnteilWelt2018, europeProzentualeVeraenderung, europeKilogrammVeraenderung);
+}
+function northAmerica() {
+    verbrauchanzeigen('North America', northAmerica2018, northAmericaAnteilWelt2018, northAmericaProzentualeVeraenderung, northAmericaKilogrammVeraenderung);
 }
 window.addEventListener('load', function () {
     document.querySelector(".europe").addEventListener('click', europe);
-});
-function northAmerica() {
-    console.log('Die Emission von Nordamerika ist: ' + northAmerica2018 + ' kg CO2');
-    console.log('Relativ zur Gesamtemission der Welt verursacht Nordamerika damit ' + northAmericaAnteilWelt2018.toFixed(2) + '%');
-    console.log('Für Nordamerika hat sich 2018 im Vergleich zu 2008 die Emission um ' + northAmericaProzentualeVeraenderung.toFixed(2) + '% verändert');
-    console.log('2018 im Vergleich zu 2008 sind das ' + northAmericaKilogrammVeraenderung.toFixed(2) + ' kg CO2');
-    document.querySelector('#absolute').innerHTML = northAmerica2018 + "";
-    document.querySelector('#relative').innerHTML = northAmericaAnteilWelt2018.toFixed(2) + "%";
-    document.querySelector('#growthpercentage').innerHTML = northAmericaProzentualeVeraenderung.toFixed(2) + "%";
-    document.querySelector('#growthabsolute').innerHTML = northAmericaKilogrammVeraenderung.toFixed(2) + "";
-    document.querySelector('#title').innerHTML = "Carbon Dioxide Emissions in North America";
-    document.querySelector('#absoluteSubtitle').innerHTML = "Emission absolute of North America in 2018";
-    document.querySelector('.chart').setAttribute('style', 'height: ' + northAmericaAnteilWelt2018 + "%");
-}
-window.addEventListener('load', function () {
     document.querySelector(".northamerica").addEventListener('click', northAmerica);
+    document.querySelector(".southamerica").addEventListener('click', southAmerica);
+    document.querySelector(".australia").addEventListener('click', australia);
+    document.querySelector(".asia").addEventListener('click', asia);
+    document.querySelector(".africa").addEventListener('click', africa);
 });
+function verbrauchanzeigen(kontinent, absoluterVerbrauch2018, relativerAnteil, prozentualeVeraenderung, kilogrammVeraenderung) {
+    document.querySelector('#title').innerHTML = "Carbon Dioxide Emissions in " + kontinent;
+    document.querySelector('#absolute').innerHTML = absoluterVerbrauch2018 + "";
+    document.querySelector('#relative').innerHTML = relativerAnteil.toFixed(2) + "%";
+    document.querySelector('#growthpercentage').innerHTML = prozentualeVeraenderung.toFixed(2) + "%";
+    document.querySelector('#growthabsolute').innerHTML = kilogrammVeraenderung.toFixed(2) + "";
+    document.querySelector('#absoluteSubtitle').innerHTML = "Emission absolute of " + kontinent + " in 2018";
+    document.querySelector('.chart').setAttribute('style', 'height: ' + relativerAnteil + "%");
+}
 //# sourceMappingURL=script.js.map
