@@ -31,7 +31,7 @@ var southAmericaKilogrammVeraenderung = southAmerica2018 - southAmerica2008;
 var europeKilogrammVeraenderung = europe2018 - europe2008;
 var northAmericaKilogrammVeraenderung = northAmerica2018 - northAmerica2008;
 function africa() {
-    verbrauchanzeigen('Europe', africa2018, africaAnteilWelt2018, africaProzentualeVeraenderung, africaKilogrammVeraenderung);
+    verbrauchanzeigen('Africa', africa2018, africaAnteilWelt2018, africaProzentualeVeraenderung, africaKilogrammVeraenderung);
 }
 function asia() {
     verbrauchanzeigen('Asia', asia2018, asiaAnteilWelt2018, asiaProzentualeVeraenderung, asiaKilogrammVeraenderung);
@@ -48,14 +48,15 @@ function europe() {
 function northAmerica() {
     verbrauchanzeigen('North America', northAmerica2018, northAmericaAnteilWelt2018, northAmericaProzentualeVeraenderung, northAmericaKilogrammVeraenderung);
 }
-window.addEventListener('load', function () {
+function addClickListeners() {
     document.querySelector(".europe").addEventListener('click', europe);
     document.querySelector(".northamerica").addEventListener('click', northAmerica);
     document.querySelector(".southamerica").addEventListener('click', southAmerica);
     document.querySelector(".australia").addEventListener('click', australia);
     document.querySelector(".asia").addEventListener('click', asia);
     document.querySelector(".africa").addEventListener('click', africa);
-});
+}
+window.addEventListener('load', addClickListeners);
 function verbrauchanzeigen(kontinent, absoluterVerbrauch2018, relativerAnteil, prozentualeVeraenderung, kilogrammVeraenderung) {
     document.querySelector('#title').innerHTML = "Carbon Dioxide Emissions in " + kontinent;
     document.querySelector('#absolute').innerHTML = absoluterVerbrauch2018 + "";
