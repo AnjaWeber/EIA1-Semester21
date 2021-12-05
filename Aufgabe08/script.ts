@@ -158,6 +158,8 @@ function recordClick(): void {
 
 //Aufnahmemodus starten
 function startAufnahme(): void {
+    //alter Beat löschen
+    beatLoeschen();
     // wenn beat aktuell abgespielt wird, wird dieser gestoppt.
     if (playing === true) {
         stopBeat();
